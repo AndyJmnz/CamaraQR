@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="95dp"
         android:text="@string/titulo1"
-        android:textColor="#673AB7"
+        android:textColor="#FF5722"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,19 +22,20 @@
 
     <Button
         android:id="@+id/btnescanear"
-        android:layout_width="150dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:backgroundTint="#FF9800"
         android:text="@string/escanear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/CodigoLeidoText"
+        android:id="@+id/CodigoLeido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/res"
         android:inputType="text"
@@ -44,40 +45,83 @@
         app:layout_constraintTop_toBottomOf="@+id/btnescanear" />
 
     <EditText
-        android:id="@+id/DescripcionText"
+        android:id="@+id/Descripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/descripcion"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CodigoLeidoText" />
+        app:layout_constraintTop_toBottomOf="@+id/CodigoLeido" />
 
     <Button
         android:id="@+id/btnCapturar"
-        android:layout_width="150dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginBottom="223dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF9800"
         android:text="@string/capturar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DescripcionText"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/Precio" />
 
     <Button
         android:id="@+id/btnLimpiar"
-        android:layout_width="150dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="219dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF9800"
         android:text="@string/limpiar"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DescripcionText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscar" />
+
+    <EditText
+        android:id="@+id/Fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Fecha de registro"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Descripcion" />
+
+    <EditText
+        android:id="@+id/Precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Precio Producto"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fecha" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF9800"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCapturar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#FF9800"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

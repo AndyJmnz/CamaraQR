@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="113dp"
         android:text="@string/titulo"
-        android:textColor="#673AB7"
+        android:textColor="#FF5722"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,9 +22,10 @@
 
     <Button
         android:id="@+id/btnLector"
-        android:layout_width="190dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="93dp"
+        android:backgroundTint="#FF9800"
         android:text="@string/menu1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,9 +33,10 @@
 
     <Button
         android:id="@+id/btnFoto"
-        android:layout_width="190dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
+        android:backgroundTint="#FF9800"
         android:text="@string/menu2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

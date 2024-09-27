@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="78dp"
         android:text="@string/titulo2"
-        android:textColor="#673AB7"
+        android:textColor="#FF5722"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,6 +25,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
+        android:backgroundTint="#FF9800"
         android:text="@string/foto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,9 +35,32 @@
         android:id="@+id/imgFoto"
         android:layout_width="339dp"
         android:layout_height="386dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTomar"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardar"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF9800"
+        android:text="Guardar Fotografia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTomar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#FF9800"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
